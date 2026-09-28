@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  text-decoration: none;
+}
+
+/* CSS variable to store certain design themes */
+:root {
+  --bg-dark: #7fbbe3;
+  --bg-light: #d7eefd;
+  --primary: #34659d;
+  --primary-dark: #274c77;
+  --accent-color: #e69138;
+  --dark-accent-color: #d58229;
+  --higlight: #fff;
+  --text-main: #000;
+  --text-light: #fff;
+  --font-family: "Inter", "Roboto", Arial, sans-serif;
+  --transition-speed: 0.2;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  background-color: var(--higlight);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+/* nav and header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 2rem;
+  background-color: var(--higlight);
+}
+
+.site-logo {
+  color: var(--accent-color);
+  font-size: 4rem;
+}
+
+.site-name {
+  color: var(--accent-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-link {
+  color: var(--accent-color);
+}
+
+/* all buttons */
+.btn-primary {
+  color: #fff;
+  background-color: var(--accent-color);
+  border: 1px var(--dark-accent-color);
+  border-radius: 30%;
+  transition: color var(--transition-speed);
+  padding: 0.75rem;
+  margin: 0.5em;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-accent-color);
+}
+
+/* hero section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5em;
+  padding: 6rem 1.5rem 4rem 1.5rem;
+
+  margin: 0rem 2rem;
+  background-color: var(--bg-light);
+  border: 1px solid var(--bg-light);
+  border-radius: 28px;
+}
+
+.hero-logo {
+  font-size: 10rem;
+}
