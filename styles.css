@@ -64,39 +64,258 @@ h3 {
 }
 .nav-link {
   color: var(--accent-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color var(--transition-speed);
+}
+.nav-link:hover {
+  color: var(--dark-accent-color);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 /* all buttons */
 .btn-primary {
-  color: #fff;
-  background-color: var(--accent-color);
   border: 1px var(--dark-accent-color);
-  border-radius: 30%;
+  border-radius: 100px;
   transition: color var(--transition-speed);
   padding: 0.75rem;
   margin: 0.5em;
   text-decoration: none;
+  text-align: center;
+  color: var(--text-main);
 }
 
-.btn-primary:hover {
+.btn-nav {
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.btn-hero {
+  background-color: var(--bg-light);
+  margin: 1rem;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.btn-nav:hover {
   background-color: var(--dark-accent-color);
 }
 
-/* hero section */
-.hero-section {
+.btn-hero:hover {
+  background-color: var(--bg-dark);
+}
+
+.btn-price {
+  background-color: var(--bg-dark);
+  border: 2px solid var(--bg-dark);
+  transition:
+    transform var(--transition-speed),
+    border-color var(--transition-speed);
+}
+
+.btn-price-featured {
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  color: var(--higlight);
+  transition:
+    transform var(--transition-speed),
+    border-color var(--transition-speed);
+}
+
+.btn-price:hover,
+.btn-price-featured:hover {
+  transform: translateY(4px);
+  border-color: var(--higlight);
+}
+
+/* general section styling */
+.section-container {
+  margin: 2rem;
+}
+
+.section-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   gap: 1.5em;
-  padding: 6rem 1.5rem 4rem 1.5rem;
+  margin-bottom: 4rem;
+}
 
+/* hero section */
+.hero-section {
+  padding: 12rem 1.5rem 4rem 1.5rem;
   margin: 0rem 2rem;
   background-color: var(--bg-light);
   border: 1px solid var(--bg-light);
   border-radius: 28px;
+  position: relative;
+  overflow: hidden;
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5em;
+
+  position: relative;
+  z-index: 2;
 }
 
 .hero-logo {
-  font-size: 10rem;
+  font-size: 37rem;
+  position: absolute;
+  left: 50%;
+  bottom: -20rem;
+  transform: translateX(-50%);
+  /* font-size: clamp(12rem, 30vw, 24rem); */
+  /* line-height: 1; */
+  color: var(--accent-color);
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* features section */
+#features {
+  margin: 4rem 10rem;
+  border-top: 4px solid var(--primary);
+  border-bottom: 4px solid var(--primary);
+  padding-top: 1.5rem;
+}
+
+.features-grid {
+  /* you can layout this using display:flex; too*/
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /*1fr stands for "1 fraction" of the available space in a grid container*/
+  gap: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.feature-card {
+  background-color: var(--higlight);
+  padding: 2rem;
+  transition: transform var(--transition-speed);
+}
+
+.feature-icon {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.feature-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.feature-div {
+  background-color: var(--primary);
+  height: 2px;
+}
+
+/* pricing */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.pricing-card {
+  background-color: var(--bg-light);
+  border: 1px solid var(--bg-dark);
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transition-speed);
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--primary);
+  background-color: rgba(151, 196, 247, 0.503);
+  transform: scale(1.03);
+}
+
+.popular-tag {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.tier-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.tier-desc {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.tier-price {
+  margin-bottom: 1.5rem;
+}
+
+.price-val {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.price-unit {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.tier-features {
+  list-style-type: none;
+  margin-bottom: 2rem;
+  flex-grow: 1; /* Pushes the button to the bottom evenly */
+}
+
+.tier-features li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(55, 65, 81, 0.5);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* :: is for psuedo- / virtual elements. This creates a virtual element dynamically created during render before the li element */
+/*note here, :: creates psuedo elements whereas : creates psuedo-classes which are states created due to user interaction or resulting 
+due to an event being triggered*/
+.tier-features li::before {
+  /* \2714 is the Unicode for ✔, followed by a space (\00A0) */
+  /* content:\2714\00A0 */
+  content: "✓ ";
+  color: var(--accent);
+  font-weight: bold;
 }

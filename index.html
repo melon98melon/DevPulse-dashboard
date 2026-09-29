@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a href="#hero-section">
+      <a href="#hero">
         <span class="site-logo">&#9864;</span>
         <span class="site-name">DevPulse</span>
       </a>
@@ -24,77 +24,121 @@
         <div class="hero-text">
           <h1 class="site-title">DevPulse</h1>
           <p class="site-desc">Cloud Infrastructure Services</p>
+
+          <a href="#register" class="btn btn-primary btn-hero"
+            >Deploy Free Cluster</a
+          >
         </div>
-        <a href="#register" class="btn btn-primary btn-hero"
-          >Deploy Free Cluster</a
-        >
+        <span class="site-logo hero-logo" aria-hidden="true">&#11044;</span>
       </section>
-      <span class="site-logo hero-logo">&#9864;</span>
       <section id="features" class="section-container">
-        <header class="features-header">
+        <header class="section-header">
           <h2 class="features-title">Features</h2>
           <p class="features-desc">heres the description</p>
         </header>
-        <article class="feature-info">
-          <p class="feature">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
-            eveniet doloremque, expedita temporibus corporis saepe? Fugit iure
-            alias consequatur, sit minima quas aliquid ab? Consequatur
-            perferendis et quas in numquam!
-          </p>
-          <hr class="feature-div" />
-          <p class="feature">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            consequatur est earum odio omnis ullam, unde maiores, consequuntur
-            ad vel sint fugit fugiat hic ex amet assumenda ipsum at rerum.
-          </p>
-          <hr class="feature-div" />
-          <p class="feature">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
-            itaque ipsa. Ex magnam tenetur quia illo vero eos natus sed
-            asperiores hic suscipit, accusamus voluptatibus nam ut, qui
-            similique necessitatibus!
-          </p>
-          <a href="#pricing">See Tiers</a>
-        </article>
-        <img src="#" alt="" />
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">&#127800;</div>
+            <h3 class="feature-title">99.9999% SLA Uptime</h3>
+            <hr class="feature-div" />
+            <p class="feature-description">
+              Distributed core engine across multi-region cloud clusters with
+              automatic fallback
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">&#127775;</div>
+            <h3 class="feature-title">PCI-DSS Level 1</h3>
+            <hr class="feature-div" />
+            <p class="feature-description">
+              Automated compliance tokens remove cardholder data exposure from
+              your server
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">&#127887;</div>
+            <h3 class="feature-title">135+ Currencies</h3>
+            <hr class="feature-div" />
+            <p class="feature-description">
+              Dynamic currency conversion and localized settlement directly to
+              regional banks.
+            </p>
+          </article>
+        </div>
       </section>
       <section id="pricing" class="section-container">
-        <header class="pricing-header">
-          <h2 class="pricing-title">Pricing</h2>
-          <p class="pricing-desc">description</p>
+        <header class="section-header">
+          <h2 class="section-title">Predictable, Transparent Pricing</h2>
+          <p class="section-subtitle">
+            Scale seamlessly from first transaction to enterprise volumes.
+          </p>
         </header>
-        <article class="pricing-card">
-          <h3 class="tier-name"></h3>
-          <p class="tier-price"></p>
-          <ul>
-            <li class="tier-feature"></li>
-            <li class="tier-feature"></li>
-            <li class="tier-feature"></li>
-          </ul>
-        </article>
-        <article class="pricing-card">
-          <h3 class="tier-name"></h3>
-          <p class="tier-price"></p>
-          <ul>
-            <li class="tier-feature"></li>
-            <li class="tier-feature"></li>
-            <li class="tier-feature"></li>
-          </ul>
-        </article>
-        <article class="pricing-card">
-          <h3 class="tier-name"></h3>
-          <p class="tier-price"></p>
-          <ul>
-            <li class="tier-feature"></li>
-            <li class="tier-feature"></li>
-            <li class="tier-feature"></li>
-          </ul>
-        </article>
+
+        <div class="pricing-grid">
+          <!-- Tier 1: Starter -->
+          <article class="pricing-card">
+            <h3 class="tier-name">Starter</h3>
+            <p class="tier-desc">For early-stage startups and MVPs.</p>
+            <div class="tier-price">
+              <span class="price-val">2.9%</span>
+              <span class="price-unit">+ 30¢ / tx</span>
+            </div>
+            <ul class="tier-features">
+              <li>Standard Payouts (T+2)</li>
+              <li>Basic Fraud Screening</li>
+              <li>Email Support</li>
+            </ul>
+            <a href="#register" class="btn btn-primary btn-price"
+              >Deploy Starter</a
+            >
+          </article>
+
+          <!-- Tier 2: Growth (Highlighted / Signifier of High Value) -->
+          <article class="pricing-card featured">
+            <div class="popular-tag">Most Popular</div>
+            <h3 class="tier-name">Growth</h3>
+            <p class="tier-desc">
+              For scaling businesses needing lower transaction fees.
+            </p>
+            <div class="tier-price">
+              <span class="price-val">2.2%</span>
+              <span class="price-unit">+ 20¢ / tx</span>
+            </div>
+            <ul class="tier-features">
+              <li>Same-Day Instant Settlement</li>
+              <li>Custom ML Fraud Rules</li>
+              <li>24/7 Dedicated Support</li>
+              <li>Multi-Org Access</li>
+            </ul>
+            <a href="#register" class="btn btn-primary btn-price-featured"
+              >Scale with Growth</a
+            >
+          </article>
+
+          <!-- Tier 3: Enterprise -->
+          <article class="pricing-card">
+            <h3 class="tier-name">Enterprise</h3>
+            <p class="tier-desc">
+              For platforms processing over $500k monthly.
+            </p>
+            <div class="tier-price">
+              <span class="price-val">Custom</span>
+              <span class="price-unit">volume rates</span>
+            </div>
+            <ul class="tier-features">
+              <li>Dedicated Solutions Architect</li>
+              <li>99.999% Guaranteed SLA</li>
+              <li>Custom Data Warehousing</li>
+            </ul>
+            <a href="#register" class="btn btn-primary btn-price"
+              >Contact Sales</a
+            >
+          </article>
+        </div>
       </section>
       <section id="calculator" class="section-container">
         <div class="form-wrapper">
-          <header class="calc-header">
+          <header class="section-header">
             <h2 class="cal-title"></h2>
             <p class="calc-desc"></p>
           </header>
@@ -117,7 +161,7 @@
       </section>
       <section id="register" class="section-container">
         <div class="form-wrapper">
-          <header class="calc-header">
+          <header class="section-header">
             <h2 class="cal-title"></h2>
             <p class="calc-desc"></p>
           </header>
@@ -141,7 +185,7 @@
     </main>
     <footer>
       <div class="footer-container">
-        <a href="#hero-section" class="footer-logo">
+        <a href="#hero" class="footer-logo">
           <span class="footer-name">&#9864; DevPulse</span>
         </a>
         <p class="footer-copy">&copy; 2026 DevPulse Tech Inc. CSI3150F26</p>
