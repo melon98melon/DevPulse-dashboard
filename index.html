@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- ------------------header + nav -------------------- -->
+
     <header class="site-header">
       <a href="#hero">
         <span class="site-logo">&#9864;</span>
@@ -20,10 +22,15 @@
       </nav>
     </header>
     <main>
+      <!-- ------------------hero + cta -------------------- -->
+
       <section id="hero" class="hero-section">
         <div class="hero-text">
           <h1 class="site-title">DevPulse</h1>
-          <p class="site-desc">Cloud Infrastructure Services</p>
+          <p class="site-desc">
+            Real-time performance, log aggregation, and automated security
+            monitoring for diverse distributed systems.
+          </p>
 
           <a href="#register" class="btn btn-primary btn-hero"
             >Deploy Free Cluster</a
@@ -31,41 +38,56 @@
         </div>
         <span class="site-logo hero-logo" aria-hidden="true">&#11044;</span>
       </section>
+
+      <!-- ------------------features-------------------- -->
+
       <section id="features" class="section-container">
         <header class="section-header feature-header">
           <h2 class="features-title">Features</h2>
-          <p class="features-desc">heres the description</p>
         </header>
         <div class="features-grid">
+          <!-- -------------- Latency Tracking ----------------- -->
+
           <article class="feature-card">
             <div class="feature-icon">&#127800;</div>
-            <h3 class="feature-title">99.9999% SLA Uptime</h3>
+            <h3 class="feature-title">Millisecond Latency Tracking</h3>
             <hr class="feature-div" />
-            <p class="feature-description">
-              Distributed core engine across multi-region cloud clusters with
-              automatic fallback
+            <p class="feature-desc">
+              Capture multiple latency metrics across distributed microservices
+              with zero agent overhead. Real-time performance monitoring.
             </p>
           </article>
+
+          <!-- -------------- Log Aggregation ----------------- -->
+
           <article class="feature-card">
             <div class="feature-icon">&#127775;</div>
-            <h3 class="feature-title">PCI-DSS Level 1</h3>
+            <h3 class="feature-title">Real-time Log Aggregation</h3>
             <hr class="feature-div" />
-            <p class="feature-description">
-              Automated compliance tokens remove cardholder data exposure from
-              your server
+            <p class="feature-desc">
+              Millions of centralized JSON logs per second with instant search
+              and filtering. Seamless log-to-metric correlation during active
+              incidents.
             </p>
           </article>
+
+          <!-- -------------- Auto-Remediation ----------------- -->
+
           <article class="feature-card">
             <div class="feature-icon">&#127887;</div>
-            <h3 class="feature-title">135+ Currencies</h3>
+            <h3 class="feature-title">Automated Auto-Remediation</h3>
             <hr class="feature-div" />
-            <p class="feature-description">
-              Dynamic currency conversion and localized settlement directly to
-              regional banks.
+            <p class="feature-desc">
+              Self healing infrastructure that detects defective nodes
+              instantly, triggering automated rollback policies before it
+              impacts users.
             </p>
           </article>
         </div>
       </section>
+
+      <!-- ------------------ pricing tiers -------------------- -->
+
       <section id="pricing" class="section-container">
         <header class="section-header">
           <h2 class="section-title">Predictable, Transparent Pricing</h2>
@@ -75,60 +97,66 @@
         </header>
 
         <div class="pricing-grid">
-          <!-- Tier 1: Starter -->
+          <!-- -------------- Developer Tier ----------------- -->
+
           <article class="pricing-card">
-            <h3 class="tier-name">Starter</h3>
-            <p class="tier-desc">For early-stage startups and MVPs.</p>
+            <h3 class="tier-name">Developer</h3>
+            <p class="tier-desc">
+              For early-stage startups and staging environments.
+            </p>
             <div class="tier-price">
-              <span class="price-val">2.9%</span>
-              <span class="price-unit">+ 30¢ / tx</span>
+              <span class="price-val">$0</span>
+              <span class="price-unit">(free)</span>
             </div>
             <ul class="tier-features">
-              <li>Standard Payouts (T+2)</li>
-              <li>Basic Fraud Screening</li>
-              <li>Email Support</li>
+              <li>Up to 5 Active Nodes</li>
+              <li>Data Retention</li>
+              <li>Standard Alerting</li>
             </ul>
             <a href="#register" class="btn btn-secondary btn-price"
-              >Deploy Starter</a
+              >Get Free Sandbox</a
             >
           </article>
 
-          <!-- Tier 2: Growth (Highlighted / Signifier of High Value) -->
+          <!-- -------------- Pro Cluster Tier ----------------- -->
+
           <article class="pricing-card featured">
             <div class="popular-tag">Most Popular</div>
-            <h3 class="tier-name">Growth</h3>
+            <h3 class="tier-name">Pro Cluster</h3>
             <p class="tier-desc">
-              For scaling businesses needing lower transaction fees.
+              For growing engineering teams and production workloads.
             </p>
             <div class="tier-price">
-              <span class="price-val">2.2%</span>
-              <span class="price-unit">+ 20¢ / tx</span>
+              <span class="price-val">$39.99</span>
+              <span class="price-unit">/ month</span>
             </div>
             <ul class="tier-features">
-              <li>Same-Day Instant Settlement</li>
-              <li>Custom ML Fraud Rules</li>
-              <li>24/7 Dedicated Support</li>
-              <li>Multi-Org Access</li>
+              <li>Up to 25 Active Nodes</li>
+              <li>Multi-Channel Alerts</li>
+              <li>Sub-10ms Ingestion Latency</li>
+              <li>Chat Support (99.9% Uptime SLA)</li>
             </ul>
             <a href="#register" class="btn btn-secondary btn-price-featured"
-              >Scale with Growth</a
+              >Deploy Pro Cluster</a
             >
           </article>
 
-          <!-- Tier 3: Enterprise -->
+          <!-- -------------- Enterprise Dedicated Tier ----------------- -->
+
           <article class="pricing-card">
-            <h3 class="tier-name">Enterprise</h3>
+            <h3 class="tier-name">Enterprise Dedicated</h3>
             <p class="tier-desc">
-              For platforms processing over $500k monthly.
+              For leading developers running large distributed systems.
             </p>
             <div class="tier-price">
-              <span class="price-val">Custom</span>
-              <span class="price-unit">volume rates</span>
+              <span class="price-val">$399</span>
+              <span class="price-unit">/month</span>
             </div>
             <ul class="tier-features">
-              <li>Dedicated Solutions Architect</li>
-              <li>99.999% Guaranteed SLA</li>
-              <li>Custom Data Warehousing</li>
+              <li>1,000+ Active Nodes <b>(Custom Scaling)</b></li>
+              <li>Custom Daily Log Throughput</li>
+              <li>Dedicated Isolated Infrastructure</li>
+              <li>Advance Security</li>
             </ul>
             <a href="#register" class="btn btn-secondary btn-price"
               >Contact Sales</a
@@ -136,6 +164,9 @@
           </article>
         </div>
       </section>
+
+      <!-- ------------------ registration + workload estimation -------------------- -->
+
       <section id="register" class="section-container">
         <div class="form-wrapper">
           <header class="section-header">
@@ -144,64 +175,84 @@
               Instant provisioning. No credit card requiered
             </p>
           </header>
-          <!--two types of forms 1. to submit a form and it returns something (get/read).
-         2. submit a form and it gives you information to save (post/write).
-         action is the url of the server where the information will go to-->
           <form action="#" method="post" class="lead-form">
             <div class="form-group">
               <label for="work-email" class="form-label">
                 Work Email <span class="required-mark">*</span>
               </label>
-              <!--the "name" will be the name variable that the server will see.
-              the "id" will only see the html file(the label)-->
               <input
                 type="email"
                 name="work-email"
                 id="work-email"
                 class="form-control"
-                placeholder="aede@xyz.com"
+                placeholder="abc@xyz.com"
                 required
               />
             </div>
             <div class="form-group">
-              <label for="monthly-volume" class="form-label"
-                >Estimated Monthly Value ($USD)</label
+              <label for="node-count" class="form-label"
+                >Cluster Node Count</label
               >
-              <!-- step="1000" changes the amount it increments -->
+              <input
+                type="number"
+                name="node-count"
+                id="node-count"
+                class="form-control"
+                min="1000"
+                max="50000"
+                step="1"
+                placeholder="10"
+              />
+              <span class="input-hint">Contact sales for more information</span>
+            </div>
+            <div class="form-group">
+              <label for="monthly-volume" class="form-label">Log Volume</label>
               <input
                 type="number"
                 name="monthly-volume"
                 id="monthly-volume"
                 class="form-control"
                 min="1000"
-                max="5000000"
+                max="50000"
                 step="1000"
-                placeholder="5000"
+                placeholder="1000"
               />
-              <span class="input-hint">Min: $1,000 - Max: $50,000,000</span>
+              <span class="input-hint">Min:1000 </span>
             </div>
             <div class="form-group">
               <label for="business-tier" class="form-label"
-                >Target Tiget Selection</label
+                >Target Tier Selection</label
               >
               <select
                 name="business-tier"
                 id="business-tier"
                 class="form-control"
               >
-                <option value="Starter">Starter ($0 Monthly Fee)</option>
-                <option value="Growth">Growth ($99 Monthly Fee)</option>
-                <option value="Enterpize">Enterpize (Custom)</option>
+                <option value="Starter">Developer ($0 Monthly Fee)</option>
+                <option value="Growth">Pro Cluster ($39 Monthly Fee)</option>
+                <option value="Enterpize">
+                  Enterpize Dedicated ($399 Monthly Fee)
+                </option>
               </select>
             </div>
-            <!-- this time we use a button instead of the <a> tag because this time it is submiting/doing something to outside the html file. -->
-            <button type="submit" class="btn btn-secondary btn-form btn-calc">
-              Generate Sandbox Credentials
-            </button>
+            <div class="cta-form">
+              <button type="submit" class="btn btn-secondary btn-form btn-calc">
+                Estimate Workload
+              </button>
+              <button
+                type="submit"
+                class="btn btn-secondary btn-form btn-submit"
+              >
+                Generate Credentials
+              </button>
+            </div>
           </form>
         </div>
       </section>
     </main>
+
+    <!-- ------------------ footer -------------------- -->
+
     <footer class="footer-container">
       <div class="footer-div">
         <a href="#hero">

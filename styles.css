@@ -71,6 +71,10 @@ h3 {
 .nav-link:hover {
   color: var(--dark-accent-color);
 }
+.site-desc {
+  display: flex;
+  text-align: center;
+}
 
 .site-nav {
   display: flex;
@@ -157,8 +161,6 @@ h3 {
   border-radius: 28px;
   position: relative;
   overflow: hidden;
-  /* justify-content: center; */
-  /* text-align: center; */
 }
 
 .hero-text {
@@ -167,7 +169,7 @@ h3 {
   align-items: center;
   justify-content: space-evenly;
   gap: 1.5em;
-
+  padding: 0rem 30rem;
   position: relative;
   z-index: 2;
 }
@@ -218,18 +220,24 @@ h3 {
 }
 
 .feature-icon {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .feature-title {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
 }
-
+/* help */
 .feature-desc {
-  color: var(--text-muted);
+  color: var(--text-main);
   font-size: 0.95rem;
+  display: flex;
+  text-align: center;
 }
 
 .feature-div {
@@ -284,7 +292,7 @@ h3 {
 }
 
 .tier-desc {
-  color: var(--text-muted);
+  color: var(--text-main);
   font-size: 0.875rem;
   margin-bottom: 1.5rem;
 }
@@ -299,7 +307,7 @@ h3 {
 }
 
 .price-unit {
-  color: var(--text-muted);
+  color: var(--text-main);
   font-size: 0.9rem;
 }
 
@@ -313,7 +321,7 @@ h3 {
   padding: 0.5rem 0;
   border-bottom: 1px solid rgba(55, 65, 81, 0.5);
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: var(--text-main);
 }
 
 /* :: is for psuedo- / virtual elements. This creates a virtual element dynamically created during render before the li element */
@@ -380,6 +388,12 @@ due to an event being triggered*/
 .input-hint {
   font-size: 0.75rem;
   color: var(--text-main);
+}
+
+.cta-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 /* footer */
