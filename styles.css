@@ -232,7 +232,7 @@ h3 {
   display: flex;
   justify-content: center;
 }
-/* help */
+
 .feature-desc {
   color: var(--text-main);
   font-size: 0.95rem;
