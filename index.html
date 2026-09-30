@@ -15,7 +15,7 @@
       <nav class="site-nav">
         <a class="nav-link" href="#features">Features</a>
         <a class="nav-link" href="#pricing">Pricing</a>
-        <a class="nav-link" href="#calculator">Workload Estimator</a>
+        <a class="nav-link" href="#register">Calculator</a>
         <a class="btn btn-primary btn-nav" href="#register">Register</a>
       </nav>
     </header>
@@ -32,7 +32,7 @@
         <span class="site-logo hero-logo" aria-hidden="true">&#11044;</span>
       </section>
       <section id="features" class="section-container">
-        <header class="section-header">
+        <header class="section-header feature-header">
           <h2 class="features-title">Features</h2>
           <p class="features-desc">heres the description</p>
         </header>
@@ -88,7 +88,7 @@
               <li>Basic Fraud Screening</li>
               <li>Email Support</li>
             </ul>
-            <a href="#register" class="btn btn-primary btn-price"
+            <a href="#register" class="btn btn-secondary btn-price"
               >Deploy Starter</a
             >
           </article>
@@ -110,7 +110,7 @@
               <li>24/7 Dedicated Support</li>
               <li>Multi-Org Access</li>
             </ul>
-            <a href="#register" class="btn btn-primary btn-price-featured"
+            <a href="#register" class="btn btn-secondary btn-price-featured"
               >Scale with Growth</a
             >
           </article>
@@ -130,140 +130,93 @@
               <li>99.999% Guaranteed SLA</li>
               <li>Custom Data Warehousing</li>
             </ul>
-            <a href="#register" class="btn btn-primary btn-price"
+            <a href="#register" class="btn btn-secondary btn-price"
               >Contact Sales</a
             >
           </article>
         </div>
       </section>
-      <section id="calculator" class="section-container">
-        <div class="form-wrapper">
-          <header class="section-header">
-            <h2 class="cal-title"></h2>
-            <p class="calc-desc"></p>
-          </header>
-          <form action="" method="get" class="calc-form">
-            <div>
-              <label for=""></label>
-              <input type="text" />
-            </div>
-            <div>
-              <label for=""></label>
-              <input type="text" />
-            </div>
-            <div>
-              <label for=""></label>
-              <input type="text" />
-            </div>
-          </form>
-          <button>Calculate</button>
-        </div>
-      </section>
       <section id="register" class="section-container">
         <div class="form-wrapper">
           <header class="section-header">
-            <h2 class="cal-title"></h2>
-            <p class="calc-desc"></p>
+            <h2 class="section-title">Claim API Snadbox Keys</h2>
+            <p class="section-subtitle">
+              Instant provisioning. No credit card requiered
+            </p>
           </header>
-          <form action="" method="get" class="calc-form">
-            <div>
-              <label for=""></label>
-              <input type="text" />
+          <!--two types of forms 1. to submit a form and it returns something (get/read).
+         2. submit a form and it gives you information to save (post/write).
+         action is the url of the server where the information will go to-->
+          <form action="#" method="post" class="lead-form">
+            <div class="form-group">
+              <label for="work-email" class="form-label">
+                Work Email <span class="required-mark">*</span>
+              </label>
+              <!--the "name" will be the name variable that the server will see.
+              the "id" will only see the html file(the label)-->
+              <input
+                type="email"
+                name="work-email"
+                id="work-email"
+                class="form-control"
+                placeholder="aede@xyz.com"
+                required
+              />
             </div>
-            <div>
-              <label for=""></label>
-              <input type="text" />
+            <div class="form-group">
+              <label for="monthly-volume" class="form-label"
+                >Estimated Monthly Value ($USD)</label
+              >
+              <!-- step="1000" changes the amount it increments -->
+              <input
+                type="number"
+                name="monthly-volume"
+                id="monthly-volume"
+                class="form-control"
+                min="1000"
+                max="5000000"
+                step="1000"
+                placeholder="5000"
+              />
+              <span class="input-hint">Min: $1,000 - Max: $50,000,000</span>
             </div>
-            <div>
-              <label for=""></label>
-              <input type="text" />
+            <div class="form-group">
+              <label for="business-tier" class="form-label"
+                >Target Tiget Selection</label
+              >
+              <select
+                name="business-tier"
+                id="business-tier"
+                class="form-control"
+              >
+                <option value="Starter">Starter ($0 Monthly Fee)</option>
+                <option value="Growth">Growth ($99 Monthly Fee)</option>
+                <option value="Enterpize">Enterpize (Custom)</option>
+              </select>
             </div>
+            <!-- this time we use a button instead of the <a> tag because this time it is submiting/doing something to outside the html file. -->
+            <button type="submit" class="btn btn-secondary btn-form btn-calc">
+              Generate Sandbox Credentials
+            </button>
           </form>
-          <button>Register</button>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-container">
-        <a href="#hero" class="footer-logo">
-          <span class="footer-name">&#9864; DevPulse</span>
+    <footer class="footer-container">
+      <div class="footer-div">
+        <a href="#hero">
+          <span class="site-logo footer-logo">&#9864;</span>
+          <span class="site-name">DevPulse</span>
         </a>
         <p class="footer-copy">&copy; 2026 DevPulse Tech Inc. CSI3150F26</p>
         <nav class="footer-nav">
-          <a href="" class="footer-links"></a
-          ><a href="" class="footer-links"></a
-          ><a href="" class="footer-links"></a
-          ><a href="" class="footer-links"></a
-          ><a href="" class="footer-links"></a>
+          <a class="footer-links" href="#hero">Back To Top</a>
+          <a class="footer-links" href="#features">Features</a>
+          <a class="footer-links" href="#pricing">Pricing</a>
+          <a class="footer-links" href="#register">Calculator</a>
+          <a class="footer-links" href="#register">Register</a>
         </nav>
       </div>
     </footer>
   </body>
 </html>
-<!-- 
-<footer>
-<a> - links to the top of the page
-<span> - logo and brand name
-<nav>
-<a> - features
-<a> - pricing
-<a> - workload estimator
-<a> - contact information
-<a> - contact information
-<a> - contact information
-<p> - company’s trademark
-
-    
-<section> - workload estimator
-<div> - form wrapper
-<header>
-<h2> form title
-<p> form description
-<form> - type: get
-<div> 
-<label> - chosen tier
-<select> - required
-<option>
-<option>
-<option>
-<div> 
-<label> - monthly volume needed
-<input> - required, type: number, min 10, max 1000
-<div> 
-<label> - extra features added
-<input> - optional
-<button> - “Calculate”
-<section> - API registration form
-<div> - form wrapper
-<header>
-<h2> form title
-<p> form description
-<form> - type: post
-<div> 
-<label> - email
-<input> type: email, required.
-<div> 
-<label> - chosen tier
-<select> - required
-<option>
-<option>
-<option>
-<div> 
-<label> - volume needed
-<input> - required, type: number, min 10, max 1000
-<div> 
-<label>  - added features
-<input>- optional
-<button> - “Submit”
-<footer>
-<a> - links to the top of the page
-<span> - logo and brand name
-<nav>
-<a> - features
-<a> - pricing
-<a> - workload estimator
-<a> - contact information
-<a> - contact information
-<a> - contact information
-<p> - company’s trademark
- -->
